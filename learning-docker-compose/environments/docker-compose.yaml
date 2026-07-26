@@ -1,0 +1,10 @@
+services:
+  postgres-example:
+    image: bitnami/postgresql:latest
+    container_name: postgres-example
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRESQL_DATABASE: db_example
+      POSTGRESQL_USERNAME: postgres
+      POSTGRESQL_PASSWORD: admin123
